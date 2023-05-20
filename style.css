@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background-color: #090b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.card {
+  width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #1b1938;
+  border-radius: 8px;
+}
+.card-text-box {
+  color: #fff;
+  width: 570px;
+  padding: 90px;
+}
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-text-box h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.card-box-text {
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: #ffffffbf;
+}
+
+.insights {
+  color: #aa5cdb;
+}
+.box-header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.box-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff99;
+}
+.image-box {
+  width: 100%;
+  background: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(170, 92, 219, 0.55);
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 327px;
+    float: none;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+  .card-text-box {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    padding: 30px;
+  }
+  .image-box {
+    background: url(images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .overlay {
+    width: 327px;
+  }
+  img {
+    width: 327px;
+    border-radius: 20px 8px 0px 0px;
+  }
+  .card-text-box h1 {
+    font-size: 26px;
+    display: block;
+    text-align: center;
+  }
+  .box {
+    margin-bottom: 20px;
+  }
+}
